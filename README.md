@@ -1,5 +1,12 @@
 ## Demonstrate SunPKCS11 on Windows with SoftHSM2 for AES and HMAC.
 
+###### Goal
+The integration tests show:
+- Successful SunPKCS11 login to SoftHSM2 and list existing keys
+- Successful AES keygen, encrypt, decrypt
+- Successful HMAC mac, verify
+- Failed HMAC keygen (because SunPKCS11 does not support GENERIC-SECRET-KEY-GEN mechanism yet)
+
 ###### Requirements:
 - Windows 10
 - JDK 8u265+: https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot
